@@ -1,0 +1,6 @@
+{
+  "name": "Abrar & Payel — Wedding Invitation",
+  "description": "A luxurious digital wedding invitation celebrating the union of Abrar & Payel with a dark romantic aesthetic, interactive wax seal envelope, event timeline, RSVP, and guestbook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
