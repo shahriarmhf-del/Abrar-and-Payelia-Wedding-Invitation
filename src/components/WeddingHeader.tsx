@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { weddingMusic, WEDDING_SONG_INFO } from '../utils/musicController';
-import { Volume2, VolumeX, Mail, Sparkles, Music } from 'lucide-react';
+import { Volume2, VolumeX, Mail, Sparkles, Music, Download } from 'lucide-react';
 
 interface WeddingHeaderProps {
   onReopenEnvelope: () => void;
@@ -35,9 +35,20 @@ export const WeddingHeader: React.FC<WeddingHeaderProps> = ({
         <span className="hidden sm:inline text-[#e0bd83]/70 font-sans-clean text-[11px]">
           The Royal Wedding of Md. Abrar Shahriar & Payelia Pervej Ripa
         </span>
-        <div className="ml-auto flex items-center gap-1.5 font-bold text-[#ffd9a0] bg-[#420f1b]/70 border border-[#e0bd83]/40 px-2.5 py-0.5 rounded-full shadow-xs">
-          <Sparkles className="w-3 h-3 text-[#e0bd83] animate-pulse" />
-          <span>Developed by Imran Shahriar</span>
+        <div className="ml-auto flex items-center gap-2">
+          <a
+            href="./wedding-invitation-dist.zip"
+            download="wedding-invitation-dist.zip"
+            title="Download compiled dist.zip for GitHub Pages"
+            className="flex items-center gap-1 font-sans-clean text-[10px] text-[#ffd9a0]/90 hover:text-[#fffaf2] bg-[#3a0d17]/80 hover:bg-[#521320] border border-[#e0bd83]/40 px-2 py-0.5 rounded-full transition-colors"
+          >
+            <Download className="w-2.5 h-2.5 text-[#e0bd83]" />
+            <span>dist.zip</span>
+          </a>
+          <div className="flex items-center gap-1.5 font-bold text-[#ffd9a0] bg-[#420f1b]/70 border border-[#e0bd83]/40 px-2.5 py-0.5 rounded-full shadow-xs">
+            <Sparkles className="w-3 h-3 text-[#e0bd83] animate-pulse" />
+            <span>Developed by Imran Shahriar</span>
+          </div>
         </div>
       </div>
 
